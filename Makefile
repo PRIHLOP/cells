@@ -5,7 +5,7 @@ TIMESTAMP:=$(shell date -u +%Y%m%d%H%M%S)
 GITREV:=$(shell git rev-parse HEAD)
 CELLS_VERSION?="${DEV_VERSION}.${TIMESTAMP}"
 
-XGO_TARGETS?="linux/amd64,darwin/amd64,windows/amd64"
+XGO_TARGETS?="linux/amd64,darwin/amd64,windows/amd64,linux/arm64v8"
 XGO_IMAGE?=pydio/xgo:latest
 
 .PHONY: all clean build main dev
